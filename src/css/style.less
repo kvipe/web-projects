@@ -1,0 +1,292 @@
+@import "smart-grid.less";
+@import "fonts.less";
+@import "functions.less";
+@import "fontello.less";
+
+@lighblue: rgb(136, 146, 176);
+@turquoise: rgb(100, 255, 218);
+@navy: rgb(10, 25, 47);
+@darkblue: #171c28;
+@yellowpastel: #f1ed7f;
+
+@max-width: 768px;
+@side-fields: 30px;
+@vert-fileds: 15px;
+
+.reset();
+
+html
+{
+	font-size: 16px;
+	font-family: 'SF Mono';
+}
+header,
+section,
+{
+	min-height: 100vh;
+}
+
+h2
+{
+	text-align: center;
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+p
+{
+	line-height: 1.4rem;
+}
+
+.face
+{
+	.flex-centered();
+
+	&-inner-wrapper
+	{
+		animation-name: face;
+		animation-duration: 3s;
+		animation-timing-function: cubic-bezier(.694,0,.335,1) 0s;
+
+		.face-pic
+		{
+			height: 200px;
+			width: 200px;
+			text-align: center;
+			margin: auto;
+			img
+			{
+				border-radius: 50%;
+				box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.24);
+			}
+		}
+		.face-title
+		{
+			text-align: center;
+			color: #000;
+			font-family: 'Calibre';
+			font-size: 3rem;
+			margin:10px 0;
+			word-wrap: break-word;
+		}
+		h2
+		{
+			font-size: 1.5rem;
+		}
+		.face-menu-wrapper
+		{
+			display: flex;
+			justify-content: center;
+			margin:10px 0;
+
+			a
+			{
+				display: block;
+				margin: 0 10px;
+				color: #000;
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+.about
+{
+	.flex-centered();
+	align-items: flex-start;
+	background: @darkblue;
+
+	&-inner-wrapper
+	{
+		max-width: @max-width;
+		padding: @side-fields @vert-fileds;
+		color: #fff;
+
+		h2
+		{
+			color: #fff;
+		}
+
+		a{
+			color: #FFF;
+			transition: color 250ms;
+
+			&:hover
+			{
+				color: @yellowpastel;
+			}
+		}
+	}
+}
+
+.projects
+{
+	.flex-centered();
+	align-items: flex-start;
+
+	&-inner-wrapper
+	{
+		.wrapper();
+		padding-top: @vert-fileds; 
+		padding-bottom: @vert-fileds; 
+		width: @max-width;
+
+		.row
+		{
+			.row-flex();
+		}
+
+		.project-preview
+		{
+			.col();
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.24);
+			position: relative;
+			.size(6);
+			.size-xs(12);
+
+			.preview-image
+			{
+				max-height: 220px;
+				overflow: hidden;
+				position: relative;
+
+				img:hover{
+					cursor: pointer;
+				}
+
+				&-popup
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					background: rgba(0,0,0,0.5);
+					.flex-centered();
+					flex-direction: column;
+
+					a, span
+					{
+						color: @yellowpastel;
+						margin: 5px;
+						text-decoration: none;
+						transition: text-decoration 250ms;
+						cursor: pointer;
+
+						&:hover
+						{
+							text-decoration:underline;
+						}
+					}
+
+					.popup-close
+					{
+						position: absolute;
+						top: 10px;
+						right: 10px;font-size: 1.2rem;
+
+					}
+				}
+			}
+
+			.preview-content
+			{
+				padding: 10px 10px 30px;
+				h3
+				{
+					font-family: 'Calibre';
+					text-align: center;
+					margin: 5px 0;
+					font-size: 1.4rem;
+				}
+
+				p
+				{
+					line-height: 1.2rem;
+				}
+
+				.meta-info
+				{
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 10px;
+					text-align: center;
+
+					span
+					{
+						border: 1px solid #000;
+						border-radius: 2px;
+						padding: 3px 5px;
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.contacts
+{
+	.flex-centered();
+	align-items: flex-start;
+
+	&-inner-wrapper
+	{
+		max-width: @max-width;
+		margin: 0 auto;
+		padding: @side-fields @vert-fileds;
+
+		a
+		{
+			color: #000;
+		}
+
+		.extra-links
+		{
+			.flex-centered();
+			margin-top: 35px;
+			font-size: 2rem;
+
+			a
+			{
+				color: @darkblue;
+
+				[class^="icon-"]
+				{
+					transition: color 250ms;
+				}
+
+				.icon-mail:hover
+				{
+					color: #D44638;
+				}
+				.icon-vkontakte:hover
+				{
+					color: #4C75A3;
+				}
+				.icon-instagram:hover
+				{
+					color: #C13584;
+				}
+			}
+		}
+	}
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: @darkblue;
+	padding: 10px 0;
+	color: @lighblue;
+}
+
+@keyframes face {
+  from {opacity: 0}
+  to {opacity: 1}
+}
