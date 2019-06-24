@@ -12,6 +12,18 @@
 				{"tag" : "Twig", "title" : "PHP Template Engine"},
 				{"tag" : "PHP", "title" : ""}
 			]
+		},
+
+		{
+			"title" : "ITforfun blog",
+			"image" : "./dist/assets/img/projects/itforfun.jpg",
+			"img-alt" : "ITforfun blog picture",
+			"url" : "https://itfor.fun",
+			"sourcecode" : "https://bitbucket.org/kvipe/jekyll-blog/src/master/",
+			"description" : "My own blog website.",
+			"tags" : [
+				{"tag": "Jekyll", "title" : ""}
+			]
 		}
 	]
 }
