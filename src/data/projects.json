@@ -24,6 +24,20 @@
 			"tags" : [
 				{"tag": "Jekyll", "title" : ""}
 			]
+		},
+
+		{
+			"title" : "My HotWheels collection website",
+			"image" : "./dist/assets/img/projects/hw-coll.jpg",
+			"img-alt" : "HW coll app picture",
+			"url" : "https://kvipe.github.io/hotwheels-collection/",
+			"sourcecode" : "https://github.com/kvipe/hotwheels-collection",
+			"description" : "It is my hobby to collect Hot Wheels cars.",
+			"tags" : [
+				{"tag": "Vue", "title" : ""},
+				{"tag" : "Vue Router", "title" : ""},
+				{"tag" : "SPA", "title" : "Single Page Application"}
+			]
 		}
 	]
 }
