@@ -38,6 +38,19 @@
 				{"tag" : "Vue Router", "title" : ""},
 				{"tag" : "SPA", "title" : "Single Page Application"}
 			]
+		},
+
+		{
+			"title" : "Stackoverflow user favorites",
+			"image" : "./dist/assets/img/projects/sof-favs.jpg",
+			"img-alt" : "SOF favs project picture",
+			"url" : "https://kvipe.github.io/stackoverflow-favorites",
+			"sourcecode" : "https://github.com/kvipe/stackoverflow-favorites",
+			"description" : "Indeed it's the useful way to explore what SOF users add in favorites.",
+			"tags" : [
+				{"tag": "Vue", "title" : ""},
+				{"tag": "SOF API ", "title" : ""}
+			]
 		}
 	]
 }
