@@ -7,7 +7,7 @@
 $ npm install
 ```
 
-As you may know, it's convenient to write sources separately and in a pretty style, but then combine them into a single uglified file. So, our sources are stored in the src folder. To get a build (in the dist folder) I decided to use [Gulp](https://gulpjs.com). For detailed explanation on what it is and how it works, checkout official docs. It's quite simple!
+As you may know, it's convenient to write sources separately and in a pretty style, but then combine them into a single uglified file. So, our sources are stored in the `src` folder. To get a build (in the `dist` folder) I decided to use [Gulp](https://gulpjs.com). For detailed explanation on what it is and how it works, checkout official docs. It's quite simple!
 
 There are 3 Gulp tasks:
 1. **css**: convert and combine .less files to the entire style.css file
